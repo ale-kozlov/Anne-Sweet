@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>Главная страница блога "Anne Sweet"</title>
+</head>
+
+<body style="background: #fff url('img/background-main.jpg') no-repeat top center / 1440px 581px">
+
+<header class="header">
+  <h1 class="visually-hidden">Anne Sweet</h1>
+  <nav class="header__nav">
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="Логотип блога" width="130" height="82">
+    </a>
+    <ul class="navigation">
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">Статьи</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">Обо мне</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">Портфолио</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="navigation__link">Написать мне</a>
+      </li>
+    </ul>
+  </nav>
+
+ <!-- <div class="mobile-menu">
+    <input id="menu-toggle" type="checkbox">
+    <label class="mobile-menu__btn-background" for="menu-toggle"></label>
+    <div class="mobile-menu__btn"></div>
+    <div class="mobile-menu__nav">
+      <ul class="nav__box">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Статьи</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Обо мне</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Портфолио</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Написать мне</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__social">
+        <li class="mobile-social__item">
+          <a href="https://www.instagram.com" class="mobile-social__link">
+            <svg viewBox="-12 -12 47 47" width="70" height="70" fill="none" class="mobile-social__link__icon">
+              <path d="M6.6571 0C2.98565 0 0 3.12481 0 6.96524V17.0365C0 20.8769 2.98565 24 6.6571 24H16.3429C20.0143 24 23 20.8769 23 17.0365V6.96524C23 3.12481 20.0143 0 16.3429 0H6.6571ZM6.6571 2.06322H16.3429C18.9559 2.06322 21.0292 4.23197 21.0292 6.96524V17.0365C21.0292 19.7698 18.9559 21.9368 16.3429 21.9368H6.6571C4.04408 21.9368 1.97241 19.7698 1.97241 17.0365V6.96524C1.97241 4.23197 4.04408 2.06322 6.6571 2.06322ZM17.6727 4.12641C16.9107 4.12641 16.2934 4.77212 16.2934 5.56909C16.2934 6.36609 16.9107 7.01178 17.6727 7.01178C18.4346 7.01178 19.0519 6.36609 19.0519 5.56909C19.0519 4.77212 18.4346 4.12641 17.6727 4.12641ZM11.5 5.82073C8.24893 5.82073 5.59264 8.5993 5.59264 12C5.59264 15.4007 8.24893 18.1793 11.5 18.1793C14.7511 18.1793 17.409 15.4007 17.409 12C17.409 8.5993 14.7511 5.82073 11.5 5.82073ZM11.5 7.88395C13.6853 7.88395 15.4366 9.71415 15.4366 12C15.4366 14.2859 13.6853 16.1161 11.5 16.1161C9.31472 16.1161 7.56504 14.2859 7.56504 12C7.56504 9.71415 9.31472 7.88395 11.5 7.88395Z" fill="#575757"/>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="https://www.facebook.com" class="mobile-social__link">
+            <svg viewBox="-17 -13 47 47" width="70" height="70" fill="none" class="mobile-social__link__icon">
+              <path d="M8.83169 0C5.69558 0 3.54784 1.82202 3.54784 5.16926V8.054H0V11.9663H3.54784V22H7.78878V11.9663H11.3267L11.8581 8.054H7.78878V5.55578C7.78878 4.4234 8.11969 3.65148 9.8251 3.65148H12V0.153977C11.6238 0.106313 10.3339 0 8.83169 0Z" fill="#575757"/>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="https://www.twitter.com" class="mobile-social__link">
+            <svg viewBox="-12 -15 47 47" width="70" height="70" fill="none" class="mobile-social__link__icon">
+              <path d="M22 2.13046C21.191 2.49194 20.321 2.73626 19.4081 2.84633C20.3398 2.28369 21.0552 1.39321 21.3922 0.332343C20.5202 0.853289 19.5546 1.23115 18.526 1.43483C17.7032 0.551897 16.5301 0 15.232 0C12.7393 0 10.7189 2.03437 10.7189 4.54398C10.7189 4.90027 10.7584 5.24719 10.8357 5.57956C7.0846 5.39031 3.75901 3.58068 1.53295 0.831733C1.14443 1.50256 0.921886 2.28304 0.921886 3.11596C0.921886 4.6927 1.71835 6.08333 2.92973 6.89853C2.18992 6.87525 1.49391 6.67074 0.885376 6.33014C0.88451 6.34929 0.884504 6.36818 0.884504 6.38718C0.884504 8.58925 2.44044 10.4254 4.50492 10.8432C4.12653 10.947 3.7279 11.002 3.31624 11.002C3.02512 11.002 2.74286 10.9742 2.46681 10.921C3.04153 12.7262 4.70801 14.0402 6.68333 14.0769C5.13742 15.2959 3.19166 16.022 1.07697 16.022C0.712916 16.022 0.353368 16.0004 0 15.9587C1.99818 17.248 4.37022 18 6.91929 18C15.2207 18 19.7597 11.076 19.7597 5.07064C19.7597 4.87371 19.7552 4.67813 19.747 4.48326C20.6285 3.84206 21.3936 3.04194 21.999 2.13049" fill="#575757"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+
+</header>
+
+<main>
+
+  <section class="articles container">
+    <h2 class="articles__title title">Все статьи</h2>
+    <label>
+      <select class="filter" name="articles-filter">
+        <option value="city">Город</option>
+        <option value="books">Книги</option>
+        <option value="travels">Путешествия</option>
+        <option value="recipes">Рецепты</option>
+        <option value="photos">Фотографии</option>
+        <option value="all" selected>Выбрать тему</option>
+      </select>
+    </label>
+    <div class="articles__list" id="all-articles">
+      <article class="list__item" data-category="travels">
+        <a href="#" class="item__link">
+          <img src="uploads/travelling-in-august.jpg" width="387" height="268" alt="Улица Берлина">
+          <h3 class="item__title">Путешествие в Берлин в августе </h3>
+          <p class="item__text">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+          <p class="item__tag">Теги:
+            <span class="news-tag">путешествия</span>
+            <time datetime="29-09-2020">29.09.2020</time>
+          </p>
+        </a>
+      </article>
+      <article class="list__item" data-category="city">
+        <a href="#" class="item__link">
+          <img src="uploads/drink-in-moscow.jpg" width="387" height="268" alt="2 стакана холодненького колдбрю">
+          <h3 class="item__title">Где выпить колдбрю в Москве</h3>
+          <p class="item__text">Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+          <p class="item__tag">Теги:
+            <span class="news-tag">город</span>
+            <time datetime="24-07-2020">24.07.2020</time>
+          </p>
+        </a>
+      </article>
+      <article class="list__item" data-category="books">
+        <a href="#" class="item__link">
+          <img src="uploads/book-recommends.jpg" width="387" height="268" alt="Стопка книг">
+          <h3 class="item__title">Прочитано: книжные рекомендации</h3>
+          <p class="item__text">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+          <p class="item__tag">Теги:
+            <span class="news-tag">книги</span>
+            <time datetime="15-07-2020">15.07.2020</time>
+          </p>
+        </a>
+      </article>
+      <article class="list__item" data-category="photos">
+        <a href="#" class="item__link" style="background: #000 url('uploads/photos.jpg') no-repeat center / 590px 552px;">
+          <h3 class="item__title">Снимки на плёнку</h3>
+          <p class="item__text">Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+          <p class="item__tag">Теги:
+            <span class="news-tag">фотографии</span>
+            <time datetime="29-06-2020">29.06.2020</time>
+          </p>
+        </a>
+      </article>
+      <article class="list__item" data-category="recipes">
+        <a href="#" class="item__link" style="background: #000 url('uploads/home-cheesecake.jpg') no-repeat center / cover">
+          <h3 class="item__title">Домашний чизкейк </h3>
+          <p class="item__text">Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
+          <p class="item__tag">Теги:
+            <span class="news-tag">рецепты</span>
+            <time datetime="24-06-2020">24.06.2020</time>
+          </p>
+        </a>
+      </article>
+    </div>
+    <a href="#" class="articles__show-more-button btn">Показать еще</a>
+  </section>
+
+  <section class="about container">
+    <h2 class="about__title title">Обо мне</h2>
+    <article class="about__article">
+      <h3 class="visually-hidden">Anne about herself</h3>
+      <img class="about__photo" src="uploads/ann-photo.jpg" alt="Фото Анны" width="590" height="693">
+      <div class="about__text">
+        <div  class="about__text__block">
+          <p>
+            Всем привет! Меня зовут Аня, и это мой личный блог.
+            Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.
+          </p>
+          <p>
+            Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!
+          </p>
+          <p>
+            Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.
+          </p>
+          <p>
+            Приятного чтения!
+          </p>
+        </div>
+        <blockquote class="about__blockquote">
+          <p class="about__blockquote__text">
+            Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя.
+          </p>
+        </blockquote>
+      </div>
+    </article>
+  </section>
+
+  <section class="portfolio container">
+    <h2 class="portfolio__title title">Портфолио</h2>
+    <ul class="portfolio__list">
+      <li class="portfolio__item" style="background: #fff url('uploads/bg-1.jpg') no-repeat center center / 387px 525px">
+        <a class="portfolio__item__link" href="#">
+          <h3 class="portfolio__item__title">Блог HTML Academy</h3>
+          <h4 class="portfolio__item__subtitle">«Как учиться продуктивно»</h4>
+          <p class="portfolio__item__text">Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
+        </a>
+      </li>
+      <li class="portfolio__item" style="background: #fff url('uploads/bg-2.jpg') no-repeat center center / 387px 525px">
+        <a class="portfolio__item__link white-text" href="#">
+          <h3 class="portfolio__item__title">Журнал «LNK»</h3>
+          <h4 class="portfolio__item__subtitle">«Зачем поцелуи нужны человеку? И какие они бывают»</h4>
+          <p class="portfolio__item__text">Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?</p>
+        </a>
+      </li>
+      <li class="portfolio__item" style="background: #fff url('uploads/bg-3.jpg') no-repeat center center / 387px 525px">
+        <a class="portfolio__item__link" href="#">
+          <h3 class="portfolio__item__title">Журнал «Т — Л»</h3>
+          <h4 class="portfolio__item__subtitle">«Советы по эффективной удалённой работе»</h4>
+          <p class="portfolio__item__text">Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
+        </a>
+      </li>
+    </ul>
+    <a href="#" class="portfolio__show-more-button btn">Показать еще</a>
+  </section>
+
+  <section class="feedback container">
+    <h2 class="feedback__title title">Написать мне</h2>
+    <form class="feedback__form" action="index.html" method="post">
+      <div class="form__block">
+        <div class="form__block-name">
+          <label class="feedback__label" for="name">Ваше имя</label><br>
+          <input class="feedback__name" type="text" id="name" name="name" placeholder="Иван Иванов" required>
+        </div>
+        <div class="form__block-email">
+          <label class="feedback__label" for="email">Email</label><br>
+          <input class="feedback__email" type="email" id="email" name="email" placeholder="google@gmail.com" required>
+        </div>
+      </div>
+        <label class="feedback__label" for="message">Сообщение</label><br>
+        <textarea class="feedback__message" name="message" id="message" cols="50" rows="10" placeholder="Напишите здесь ваше сообщение."></textarea>
+      <button class="feedback__button btn" type="submit">Отправить</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <ul class="footer__social">
+    <li class="social__item">
+      <a href="https://vk.com" class="social__link">
+        ВК
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="https://web.telegram.org" class="social__link">
+        Телеграм
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="https://www.instagram.com" class="social__link">
+        Инстаграм
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="https://www.twitter.com" class="social__link">
+        Твиттер
+      </a>
+    </li>
+  </ul>
+</footer>
+
+<a class="up-button">
+  <svg viewBox="-10 -10 1050 1050" width="50" height="50" class="up-button__icon">
+    <path d="M500,990C229.4,990,10,770.6,10,500C10,229.4,229.4,10,500,10c270.6,0,490,219.4,490,490C990,770.6,770.6,990,500,990z M500,71.3c-236.8,0-428.8,192-428.8,428.7c0,236.8,192,428.8,428.8,428.8c236.8,0,428.7-192,428.7-428.8C928.7,263.2,736.8,71.3,500,71.3z M835.1,616.3l-14.4,14.5c-12,12.1-31.4,12.1-43.3,0L510.2,361.6L243.1,630.9c-12,12.1-31.4,12.1-43.3,0l-14.4-14.5c-12-12.1-12-31.6,0-43.7l303.3-305.6c12-12.1,31.4-12.1,43.3,0l303.2,305.6C847.1,584.7,847.1,604.3,835.1,616.3z"/>
+  </svg>
+  <span class="visually-hidden">Наверх</span>
+</a>
+<script src="js/up-button.js"></script>
+<script src="js/filter.js"></script>
+
+</body>
+
+</html>

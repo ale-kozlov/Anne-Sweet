@@ -1,0 +1,183 @@
+/*---------------------Article---------------------*/
+
+.article__block {
+    max-width: 998px;
+    margin: 85px auto 81px;
+    padding: 0 320px 0 120px;
+}
+
+.article__title {
+    margin-bottom: 0;
+}
+
+time {
+    margin-left: 20px;
+}
+
+.article__text-block {
+    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+figure {
+    margin: 40px auto;
+}
+
+figcaption {
+    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.article__tag {
+    margin: 16px 0 40px;
+}
+
+.article__stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 37px;
+}
+
+.article__like {
+    min-width: 92px;
+    min-height: 50px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.article__like .likes-number {
+    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-size: 24px;
+    margin-left: 54px;
+    display: block;
+    margin-top: 15px;
+}
+
+.article__like {
+    color: #000;
+    background-image: url("../img/like-icon.svg");
+}
+
+.article__like:hover,
+.article__like:focus {
+    opacity: .7;
+}
+
+.article__like.added {
+    color: #f00;
+    background-image: url("../img/like-icon-added.svg");
+}
+
+.article__social {
+    width: 214px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article__social__item:hover,
+.article__social__item:focus {
+    opacity: .7;
+}
+
+.article__to-all-articles {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.article__to-all-articles:hover,
+.article__to-all-articles:focus {
+    opacity: .7;
+    text-decoration: underline dotted;
+}
+
+.commentaries {
+    max-width: 793px;
+    box-sizing: border-box;
+}
+
+.commentaries__list {
+    background-color: #ECE1E1;
+    padding: 44px 81px 49px 99px;
+    margin: 65px 0 77px;
+    border-radius: 10px;
+}
+.user-comment img {
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.user-comment span {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px;
+}
+
+.user-comment p {
+    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.commentary__form-title {
+    margin-left: 82px;
+    margin-bottom: 69px;
+}
+
+.commentary__form {
+    width: 793px;
+    height: 208px;
+    display: flex;
+}
+
+.commentary__form-inner {
+    width: 225px;
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commentary__form-name,
+.commentary__form-email {
+    width: 221px;
+    height: 40px;
+    border-bottom: 1px solid #2E2F22;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.commentary__form-button {
+    width: 224px;
+    margin: 0;
+}
+
+.commentary__form-field {
+    width: 406px;
+    height: 208px;
+    resize: none;
+    border: 1px solid #2E2F22;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
