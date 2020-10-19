@@ -20,16 +20,16 @@
 		</a>
 		<ul class="navigation">
 			<li class="navigation__item">
-				<a href="#" class="navigation__link">Статьи</a>
+				<a href="index.html#all-articles" class="navigation__link">Статьи</a>
 			</li>
 			<li class="navigation__item">
-				<a href="#" class="navigation__link">Обо мне</a>
+				<a href="index.html#about-me" class="navigation__link">Обо мне</a>
 			</li>
 			<li class="navigation__item">
-				<a href="#" class="navigation__link">Портфолио</a>
+				<a href="index.html#portfolio" class="navigation__link">Портфолио</a>
 			</li>
 			<li class="navigation__item">
-				<a href="#" class="navigation__link">Написать мне</a>
+				<a href="index.html#write-me" class="navigation__link">Написать мне</a>
 			</li>
 		</ul>
 	</nav>
@@ -104,7 +104,9 @@
 			<p class="article__text-block">Определив, к какому типу относится поведение, вы узнаете, какие стимулы использовать для достижения поставленной цели. Например, я решила выучить английский — само изучение не является целью, поэтому нужно правильно
 				её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не потеряюсь в новой стране. И это можно использовать в различных сферах жизни.</p>
 			<div class="article__stats">
-				<button class="article__like" type="button"><span class="likes-number">16</span></button>
+				<button class="article__like" type="button">
+					<span class="likes-number">16</span>
+				</button>
 				<div class="article__social">
 					<a class="article__social__item" href="https://twitter.com">
 						<img src="img/twitter.svg" alt="twitter icon">
@@ -145,7 +147,7 @@
 						<input class="commentary__form-email" type="email" name="email" placeholder="Почта" required>
 						<button class="commentary__form-button btn" type="submit">Отправить</button>
 					</div>
-					<textarea type="text" class="commentary__form-field" placeholder="Написать комментарий..." required></textarea>
+					<textarea type="text" class="commentary__form-field" placeholder="Написать комментарий..." required maxlength="200" minlength="10"></textarea>
 				</form>
 			</div>
 
